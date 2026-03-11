@@ -2,43 +2,92 @@
 <html lang="si">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iresha Akalanka | Portfolio</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; }
-        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        .project-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-left: 5px solid #3498db; background: #f9f9f9; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; display: inline-block; }
-        .skill-tag { background: #3498db; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; margin-right: 5px; }
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #34495e;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; background-color: #f4f7f6; }
+        header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        h2 { color: var(--primary); border-bottom: 3px solid var(--secondary); display: inline-block; margin-top: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid var(--secondary); }
+        .card h3 { margin-top: 0; color: var(--dark); }
+        .tag { background: #e1f5fe; color: #01579b; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px; }
+        .desc { font-size: 0.95rem; color: #555; margin: 15px 0; }
+        .office-tag { font-size: 0.85rem; font-style: italic; color: #7f8c8d; display: block; margin-top: 10px; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>ඉරේෂ අකලංක පෙරේරා</h1>
-    <p>Software Developer | Content Designer | AI Enthusiast</p>
+    <p>Software Developer | Digital Content Creator | System Designer</p>
+    <p style="font-size: 0.9rem; opacity: 0.8;">Specialized in Google Apps Script & Public Sector Solutions</p>
 </header>
 
 <div class="container">
-    <h2>මෘදුකාංග ව්‍යාපෘති (Software Projects)</h2>
     
-    <div class="project-card">
-        <h3>SAFE-KID - Data Management System</h3>
-        <p>Google Apps Script භාවිතයෙන් සකස් කළ දත්ත කළමනාකරණ පද්ධතියකි.</p>
-        <span class="skill-tag">Google Apps Script</span> <span class="skill-tag">Automation</span>
+    <h2>මෘදුකාංග සහ පද්ධති නිර්මාණය (Software Projects)</h2>
+    <div class="grid">
+        
+        <div class="card">
+            <span class="tag">Google Apps Script</span>
+            <h3>SAFE-KID Data Management</h3>
+            <p class="desc">ළමුන් සහ පවුල් පිළිබඳ දත්ත රැස් කිරීම, සැලසුම් සකස් කිරීම සහ බහුවිධ Google Sheets අතර දත්ත සමකාලීන කිරීම (Synchronization) සඳහා වූ පද්ධතියකි.</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">FinTech</span> <span class="tag">Automation</span>
+            <h3>Payroll & BOC SLIPS System</h3>
+            <p class="desc">කාර්යාලීය වැටුප් සැකසීම සහ බැංකු පද්ධති (Fixed-width format) මගින් පිළිගන්නා SLIPS ගොනු ස්වයංක්‍රීයව නිපදවීමේ විසඳුමකි. මෙහි Fund Source Management පහසුකම ඇතුළත් වේ.</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Calculators</span>
+            <h3>Land Compensation Calculator</h3>
+            <p class="desc">ඉඩම් අත්පත් කරගැනීමේදී ගෙවිය යුතු වන්දි මුදල් සහ පොලිය ගණනය කිරීම සඳහා වූ විශේෂිත මෘදුකාංගයකි (ඉඩම් වන්දි පොලී ගණකය).</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">HTML/CSS</span>
+            <h3>A4 Document Template Engine</h3>
+            <p class="desc">Abhaya Libre අකුරු පෙනුම සහිතව රාජ්‍ය අංශයේ වාර්තා සහ ලේඛන නිවැරදි A4 ප්‍රමාණයට HTML හරහා PDF ලෙස ලබාගැනීමේ template නිර්මාණය.</p>
+        </div>
+
     </div>
 
-    <div class="project-card">
-        <h3>Payroll & BOC SLIPS System</h3>
-        <p>බැංකු පද්ධති වලට අනුකූලව වැටුප් වාර්තා සකස් කිරීමේ ස්වයංක්‍රීය පද්ධතියකි.</p>
-        <span class="skill-tag">FinTech</span> <span class="skill-tag">Data Integration</span>
+    <h2>නිර්මාණාත්මක දායකත්වය (Creative & Graphic Works)</h2>
+    <div class="grid">
+        
+        <div class="card">
+            <h3>Graphic & Publication Design</h3>
+            <p class="desc">කාර්යාලීය නිල වාර්තා සහ පොත් නිර්මාණය (Book Designing). AI Prompt Engineering භාවිතයෙන් නිර්මාණාත්මක රූප සහ පෝස්ටර් සැකසීම.</p>
+            <span class="office-tag">Projects: "Country Together" (රටම එකට) National Mission visual prompts.</span>
+        </div>
+
+        <div class="card">
+            <h3>Multimedia Content</h3>
+            <p class="desc">වෘත්තීය මට්ටමේ PowerPoint Presentations සහ වීඩියෝ සංස්කරණය (Video Editing).</p>
+        </div>
+
     </div>
 
-    <h2>නිර්මාණාත්මක දායකත්වය (Creative Works)</h2>
-    <div class="project-card">
-        <p>පොත් නිර්මාණය (Book Designing), වීඩියෝ සංස්කරණය සහ රාජ්‍ය අංශයේ අවශ්‍යතා සඳහා PowerPoint Presentations සැකසීම.</p>
+    <div style="margin-top: 50px; background: #eef2f3; padding: 20px; border-radius: 8px; text-align: center;">
+        <h3>වෘත්තීය පළපුරුද්ද</h3>
+        <p>ශ්‍රී ජයවර්ධනපුර කෝට්ටේ ප්‍රාදේශීය ලේකම් කාර්යාලයේ ඉඩම් අත්පත් කරගැනීමේ අංශයට අනුයුක්තව සේවය කරමින්, ආයතනික ක්‍රියාවලීන් ඩිජිටල්කරණයට සක්‍රීය දායකත්වයක් ලබා දෙමි.</p>
     </div>
+
 </div>
+
+<footer style="text-align: center; padding: 40px; color: #7f8c8d; font-size: 0.8rem;">
+    &copy; 2026 Iresha Akalanka Perera. All Rights Reserved.
+</footer>
 
 </body>
 </html>
