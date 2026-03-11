@@ -1,101 +1,111 @@
 <!DOCTYPE html>
-<html lang="si">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iresha Akalanka | Professional Portfolio</title>
+    <title>Iresha Akalanka | Portfolio - Solutions Developer</title>
     <style>
         :root { --primary: #1a2a6c; --secondary: #b21f1f; --accent: #fdbb2d; --bg: #f4f7f6; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--bg); }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--bg); }
         header { background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); color: white; padding: 4rem 1rem; text-align: center; }
         .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .project-section { background: white; border-radius: 12px; padding: 30px; margin-bottom: 40px; shadow: 0 10px 20px rgba(0,0,0,0.1); border-left: 8px solid var(--primary); }
-        h2 { color: var(--primary); text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
-        h3 { color: var(--secondary); margin-top: 0; }
+        .project-section { background: white; border-radius: 12px; padding: 30px; margin-bottom: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-left: 8px solid var(--primary); }
+        h2 { color: var(--primary); text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 50px; }
+        h3 { color: var(--secondary); margin-top: 0; font-size: 1.5rem; }
         .stats-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
         .stats-table th, .stats-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        .stats-table th { background-color: #f8f9fa; }
-        .img-placeholder { background: #eee; width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; color: #888; border-radius: 8px; margin-bottom: 20px; border: 2px dashed #ccc; }
-        .tag { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-right: 5px; }
+        .stats-table th { background-color: #f8f9fa; color: var(--primary); }
+        .img-container { width: 100%; margin-bottom: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; }
+        .img-container img { width: 100%; display: block; }
+        .tag { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-right: 5px; font-weight: bold; }
         .highlight { color: #b21f1f; font-weight: bold; }
+        .intro-box { background: #eef2f3; padding: 25px; border-radius: 8px; text-align: center; margin-bottom: 30px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>ඉරේෂ අකලංක පෙරේරා</h1>
-    <p>System Developer | Efficiency Analyst | Creative Designer</p>
-    <p>ශ්‍රී ජයවර්ධනපුර කෝට්ටේ ප්‍රාදේශීය ලේකම් කාර්යාලය සඳහා ඩිජිටල් විසඳුම් සම්පාදක</p>
+    <h1>Iresha Akalanka Perera</h1>
+    <p>Full-Stack Solutions Developer | Automation Expert | Creative Designer</p>
+    <p style="font-size: 0.9rem; opacity: 0.9;">Empowering Public Sector through Digital Transformation</p>
 </header>
 
 <div class="container">
 
+    <div class="intro-box">
+        <p>A self-taught developer specialized in <strong>Google Apps Script</strong> and <strong>Cloud-based Automation</strong>. Currently attached to the Divisional Secretariat Sri Jayewardenepura Kotte, focusing on streamlining government processes and enhancing public service efficiency through innovative tech solutions.</p>
+    </div>
+
+    <h2>Core Software Projects</h2>
+
     <div class="project-section">
-        <h3>01. SAFE-KID (Securing All Families and Every Kid)</h3>
+        <h3>01. SAFE-KID Management System</h3>
+        <p><em>(Securing All Families and Every Kid)</em></p>
         <div class="img-container">
     <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20220536.png" alt="SAFE-KID Dashboard">
 </div>
-        <p>අධි අවදානම් පවුල් සහ දරුවන්ගේ ආරක්ෂාව තහවුරු කිරීම සඳහා දත්ත මධ්‍යගත කරන ලද පද්ධතියකි[cite: 146, 148]. මෙහි ප්‍රධාන අංග 06ක් ඇතුළත් වේ (Data Analytics Dashboard, List of Records, Monitoring etc.)[cite: 150, 151, 152].</p>
+        <p>A centralized data management system designed to identify high-risk families and ensure child protection. It features 06 main components including Data Analytics Dashboards and automated monitoring tools.</p>
         <table class="stats-table">
-            <tr><th>මිනුම් දණ්ඩ</th><th>පැවති තත්ත්වය (Manual)</th><th>වත්මන් තත්ත්වය (SAFE-KID)</th></tr>
-            <tr><td>අවදානම් හඳුනා ගැනීම</td><td>සාරාංශගත කිරීම අපහසුයි</td><td class="highlight">Dashboard එක හරහා ක්ෂණිකයි</td></tr>
-            <tr><td>තීරණ ගැනීමේ වේගය</td><td>දින ගණනාවක් ගත වේ</td><td class="highlight">Real-time (පැය කිහිපයකින්)</td></tr>
+            <tr><th>Metric</th><th>Manual Process (Paper-based)</th><th>Digital Process (SAFE-KID)</th></tr>
+            <tr><td>Risk Identification</td><td>Difficult to summarize</td><td class="highlight">Instant via Dashboard</td></tr>
+            <tr><td>Decision Speed</td><td>Several Days</td><td class="highlight">Real-time (Within hours)</td></tr>
         </table>
-        <span class="tag">Google Apps Script</span> <span class="tag">Social Welfare</span>
+        <span class="tag">Google Apps Script</span> <span class="tag">Social Services</span> <span class="tag">Data Analytics</span>
     </div>
 
     <div class="project-section">
-        <h3>02. ඉඩම් වන්දි පොලී ගණනය කිරීමේ පද්ධතිය</h3>
-        <div class="img-placeholder">Calculator Screenshot Here</div>
-        <p>ඉඩම් අත්කර ගැනීමේදී ගෙවිය යුතු සංකීර්ණ පොලී මුදල් ඉතා නිවැරදිව සහ කඩිනමින් ගණනය කිරීමට නිර්මාණය කර ඇත[cite: 17, 19].</p>
-        <p><strong>ප්‍රතිඵලය:</strong> එක් වාර්තාවක් සඳහා වැය වූ කාලය විනාඩි 30 සිට 05 දක්වා අවම කර ඇත (<span class="highlight">83% ක කාලීන ඉතිරියක්</span>)[cite: 25, 26].</p>
-        <span class="tag">Finance</span> <span class="tag">Automation</span>
+        <h3>02. Land Compensation Interest Calculator</h3>
+        <p>Automated solution for calculating complex interest and compensation for land acquisition processes.</p>
+        <p><strong>Impact:</strong> Reduced processing time per report from 30 minutes to just 05 minutes, achieving an <span class="highlight">83% increase in efficiency.</span></p>
+        <span class="tag">FinTech</span> <span class="tag">Automation</span> <span class="tag">Legal-Tech</span>
     </div>
 
     <div class="project-section">
-        <h3>03. ග්‍රාම නිලධාරී වසම් සෙවීමේ පද්ධතිය</h3>
-        <div class="img-placeholder">Search Interface Screenshot Here</div>
-        <p>මහජනතාවට තමන් පදිංචි වීදිය අනුව අදාළ ග්‍රාම නිලධාරියා සහ සම්බන්ධීකරණ තොරතුරු තත්පර 10ක් ඇතුළත සොයාගත හැකි පද්ධතියකි[cite: 27, 32].</p>
-        <p><strong>ඵලදායිතාව:</strong> කාර්යාලයට පැමිණීමට වැයවන කාලය සහ නිලධාරීන්ගේ සේවා බර විශාල ලෙස අවම කර ඇත[cite: 35, 38].</p>
-        <span class="tag">Public Service</span> <span class="tag">Search Engine</span>
+        <h3>03. Grama Niladhari Division Search Engine</h3>
+        <p>A public-facing tool allowing citizens to find their respective GN officers and contact details based on their street name within 10 seconds.</p>
+        <p><strong>Key Value:</strong> Drastically reduced physical inquiries and office congestion.</p>
+        <span class="tag">Public Service</span> <span class="tag">UX Design</span>
     </div>
 
     <div class="project-section">
-        <h3>04. ක්‍ෂේත්‍ර නිලධාරී ප්‍රගති කළමනාකරණ පද්ධතිය</h3>
-        <p>ග්‍රාම නිලධාරී සහ සංවර්ධන නිලධාරීන්ගේ දෛනික රාජකාරි ප්‍රගතිය මාර්ගගතව (Online) අධීක්ෂණය කිරීමේ පද්ධතියකි[cite: 39, 41].</p>
-        <p><strong>විශේෂත්වය:</strong> ලිඛිත වාර්තා වෙනුවට කඩදාසි රහිත (Paperless) ක්‍රමවේදයක් හරහා තත්‍ය කාලීන Dashboards ලබා ගත හැක[cite: 45, 49].</p>
-        <span class="tag">Progress Tracking</span> <span class="tag">Paperless</span>
+        <h3>04. Record Room Management System (RRMS)</h3>
+        <p>An inventory and search system for physical archives, allowing officers to locate specific files among thousands in under 30 seconds.</p>
+        <p><strong>Efficiency:</strong> Search time reduced from 30+ minutes to near-instant results.</p>
+        <span class="tag">Inventory Management</span> <span class="tag">JavaScript</span>
     </div>
 
-    <div class="project-section">
-        <h3>05. ලේඛනාගාර කළමනාකරණ පද්ධතිය (RRMS)</h3>
-        <p>දහස් සංඛ්‍යාත ලිපිගොනු පවතින ස්ථානය තත්පර 10-30ක් ඇතුළත සෙවුම් යන්ත්‍රයක් හරහා සොයා ගැනීමට ඉඩ සලසන පද්ධතියකි[cite: 53, 57].</p>
-        <p><strong>වර්ධනය:</strong> ලිපිගොනු සෙවීමට වැය වූ කාලය විනාඩි 30 සිට තත්පර ගණනක් දක්වා අඩු කර ඇත[cite: 60].</p>
-        <span class="tag">Inventory</span> <span class="tag">JavaScript</span>
-    </div>
+    <h2>Administrative & Creative Excellence</h2>
 
-    <h2>අමතර තාක්ෂණික විසඳුම්</h2>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
         <div class="project-section" style="margin-bottom: 0;">
-            <h3>විදුලි උපකරණ නිරීක්ෂණ පද්ධතිය</h3>
-            <p>කාර්යාලීය උපකරණවල නඩත්තු කටයුතු සහ වත්මන් තත්ත්වය පරීක්ෂා කිරීමේ පද්ධතියකි[cite: 63, 67].</p>
+            <h3>Field Officer Progress Tracking</h3>
+            <p>Paperless monitoring system for Grama Niladhari and Development Officers to report daily field progress via digital forms.</p>
+            <span class="tag">Management</span>
         </div>
         <div class="project-section" style="margin-bottom: 0;">
-            <h3>තැපෑල කළමනාකරණ පද්ධතිය</h3>
-            <p>ලැබෙන ලිපි ඩිජිටල් ක්‍රමවේදයකට අංශ වෙත යොමු කිරීම සහ ප්‍රගතිය පරීක්ෂා කිරීමේ පහසුකම[cite: 96, 98].</p>
+            <h3>Mail Management System</h3>
+            <p>Digital tracking of incoming/outgoing mail to monitor task delegation and response times across departments.</p>
+            <span class="tag">E-Governance</span>
         </div>
     </div>
 
-    <div class="project-section" style="margin-top: 40px; border-left-color: #fdbb2d;">
-        <h3>විශේෂ ව්‍යාපෘතිය: "දිට්වා" සුළි කුණාටු සහන සහ වන්දි කළමනාකරණය</h3>
-        <p>වන්දි ගෙවීමේදී අනුපිටපත් (Duplicates) හඳුනාගෙන රජයේ මුදල් නාස්තිය අවම කිරීමට සහ අවතැන් වූ දරුවන්ගේ තොරතුරු රැස් කිරීමට මෙය භාවිතා කරන ලදී[cite: 77, 83, 85].</p>
-        <span class="tag">Disaster Management</span> <span class="tag">Financial Integrity</span>
+    <div class="project-section" style="margin-top: 40px; border-left-color: var(--accent);">
+        <h3>Special Project: Disaster Compensation Management</h3>
+        <p>Deployed during the "Ditwa" cyclone period to gather child safety data and identify duplicate compensation claims, preventing financial leakage of government funds.</p>
+        <span class="tag">Disaster Management</span> <span class="tag">Crisis Tech</span>
+    </div>
+
+    <h2>Skills & Tools</h2>
+    <div class="intro-box">
+        <p><strong>Development:</strong> Google Apps Script, HTML/CSS, JavaScript, Google Sheets API</p>
+        <p><strong>Creative:</strong> Professional Video Editing, Publication Design (Books), AI Prompt Engineering</p>
+        <p><strong>Administrative:</strong> Land Acquisition Specialist, Public Administration, Data Analysis</p>
     </div>
 
 </div>
 
 <footer style="text-align: center; padding: 40px; background: #2c3e50; color: white; margin-top: 50px;">
-    <p>&copy; 2026 ඉරේෂ අකලංක පෙරේරා | ශ්‍රී ජයවර්ධනපුර කෝට්ටේ ප්‍රාදේශීය ලේකම් කාර්යාලය</p>
+    <p>&copy; 2026 Iresha Akalanka Perera | Professional Portfolio</p>
 </footer>
 
 </body>
