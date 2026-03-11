@@ -9,21 +9,22 @@
         body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--bg); }
         
         /* Header & Profile Section */
-        header { background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); color: white; padding: 3rem 1rem; text-align: center; }
+        header { background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); color: white; padding: 4rem 1rem; text-align: center; }
         .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
         
         .container { max-width: 1100px; margin: auto; padding: 20px; }
         .project-section { background: white; border-radius: 12px; padding: 30px; margin-bottom: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-left: 8px solid var(--primary); }
         h2 { color: var(--primary); text-transform: uppercase; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 50px; }
-        h3 { color: var(--secondary); margin-top: 0; font-size: 1.5rem; }
+        h3 { color: var(--secondary); margin-top: 0; font-size: 1.6rem; }
         
-        /* Image Styling - Fixed for proper display */
+        /* Image Styling */
         .img-container { width: 100%; margin-bottom: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .img-container img { width: 100%; display: block; height: auto; }
+        .img-container img { width: 100%; display: block; height: auto; transition: transform 0.3s; }
+        .img-container img:hover { transform: scale(1.02); }
         
-        .tag { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-right: 5px; font-weight: bold; }
+        .tag { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-right: 5px; font-weight: bold; display: inline-block; margin-bottom: 5px; }
         .highlight { color: #b21f1f; font-weight: bold; }
-        .intro-box { background: white; padding: 25px; border-radius: 8px; text-align: center; margin-bottom: 30px; border: 1px solid #ddd; }
+        .intro-box { background: white; padding: 30px; border-radius: 8px; text-align: center; margin-bottom: 30px; border: 1px solid #ddd; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
         footer { text-align: center; padding: 40px; background: #2c3e50; color: white; margin-top: 50px; }
     </style>
 </head>
@@ -38,20 +39,17 @@
 <div class="container">
 
     <div class="intro-box">
-        <p>Expert in <strong>Google Apps Script</strong> and <strong>Public Sector Automation</strong>. Specializing in transforming manual government workflows into efficient digital systems with zero infrastructure cost.</p>
+        <p>Experienced in <strong>Google Apps Script</strong> and <strong>Public Sector Automation</strong>. Specializing in digitizing government workflows to enhance efficiency, transparency, and data-driven decision making with zero infrastructure costs.</p>
     </div>
 
     <h2>Core Software Projects</h2>
 
-       <div class="project-section">
-    <h3>01. Payroll Disbursement & Management System</h3>
-    <div class="img-container">
-        <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20223927.png" alt="Payroll System Dashboard">
-    </div>
-    <p>A comprehensive system for processing office salaries, fund source management (Central/Provincial), and automated generation of <strong>BOC SLIPS</strong> files in fixed-width format.</p>
-    <span class="tag">FinTech</span> <span class="tag">BOC SLIPS</span> <span class="tag">Automation</span>
-</div>
-        <p>A comprehensive system for processing office salaries, fund source management (Central/Provincial), and automated generation of <strong>BOC SLIPS</strong> files in fixed-width format.</p>
+    <div class="project-section">
+        <h3>01. Payroll Disbursement & Management System</h3>
+        <div class="img-container">
+            <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20223927.png" alt="Payroll Management Dashboard">
+        </div>
+        <p>A comprehensive system for processing employee salaries, managing multiple fund sources (Central/Provincial), and automated generation of <strong>BOC SLIPS</strong> files for seamless banking transactions.</p>
         <span class="tag">FinTech</span> <span class="tag">BOC SLIPS</span> <span class="tag">Automation</span>
     </div>
 
@@ -60,8 +58,8 @@
         <div class="img-container">
             <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20220536.png" alt="SAFE-KID Dashboard">
         </div>
-        <p>Centralized data system for monitoring high-risk families and child protection. Features real-time analytics for decision-making.</p>
-        <span class="tag">Google Apps Script</span> <span class="tag">Data Analytics</span>
+        <p>A mission-critical data management system for child protection. It identifies high-risk families and monitors interventions in real-time to ensure the safety of children in the division.</p>
+        <span class="tag">Google Apps Script</span> <span class="tag">Social Analytics</span> <span class="tag">Data Visualization</span>
     </div>
 
     <div class="project-section">
@@ -69,8 +67,8 @@
         <div class="img-container">
             <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20221710.png" alt="Land Compensation Calculator">
         </div>
-        <p>Automated interest calculator for land acquisition, reducing complex manual calculations by <span class="highlight">83%</span>.</p>
-        <span class="tag">Automation</span> <span class="tag">Legal-Tech</span>
+        <p>Digitizing the land acquisition process by automating complex interest calculations. This tool has achieved an <span class="highlight">83% reduction</span> in manual calculation time, ensuring higher accuracy.</p>
+        <span class="tag">Process Automation</span> <span class="tag">Legal-Tech</span>
     </div>
 
     <div class="project-section">
@@ -78,8 +76,8 @@
         <div class="img-container">
             <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-02-22%20201400.png" alt="GN Search Engine">
         </div>
-        <p>Public search tool to identify GN divisions and contact details instantly based on street names.</p>
-        <span class="tag">UX Design</span> <span class="tag">Public Service</span>
+        <p>A citizen-centric web application that allows users to instantly find their relevant Grama Niladhari officer and contact details by street name, significantly reducing office walk-ins.</p>
+        <span class="tag">Public Service</span> <span class="tag">Search Engine</span>
     </div>
 
     <div class="project-section">
@@ -87,25 +85,27 @@
         <div class="img-container">
             <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-02-25%20001458.png" alt="Record Room Management">
         </div>
-        <p>File tracking system that locates any file within the archives in under 30 seconds.</p>
-        <span class="tag">Inventory</span> <span class="tag">JavaScript</span>
+        <p>An internal archive management tool that optimizes file retrieval. Officers can now locate physical files among thousands within 30 seconds via a simple search interface.</p>
+        <span class="tag">Digital Archives</span> <span class="tag">Inventory System</span>
     </div>
 
-    <h2>Other Specialized Solutions</h2>
+    <h2>Supplementary Digital Solutions</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
         <div class="project-section">
             <h3>Electronic Appliance Review</h3>
             <div class="img-container">
                 <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20222801.png" alt="Appliance Tracking">
             </div>
-            <p>Monitoring system for office equipment status and maintenance.</p>
+            <p>A monitoring system for office electrical equipment to track status, maintenance logs, and lifecycle management.</p>
+            <span class="tag">Asset Tracking</span>
         </div>
         <div class="project-section">
-            <h3>Disaster Management</h3>
+            <h3>Disaster Management System</h3>
             <div class="img-container">
                 <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20223428.png" alt="Disaster Tech">
             </div>
-            <p>Compensation tracking and duplicate claim detection during crises.</p>
+            <p>Developed during the "Ditwa" cyclone period to coordinate relief, identify duplicate claims, and manage child safety data effectively.</p>
+            <span class="tag">Crisis Management</span>
         </div>
     </div>
 
@@ -113,7 +113,7 @@
 
 <footer>
     <p>&copy; 2026 Iresha Akalanka Perera | Professional Portfolio</p>
-    <p style="font-size: 0.8rem; opacity: 0.7;">Developed with Google Apps Script & GitHub Pages</p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">Powered by Google Apps Script & GitHub Pages</p>
 </footer>
 
 </body>
