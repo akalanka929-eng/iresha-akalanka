@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iresha Akalanka | Portfolio - Solutions Developer</title>
+    <title>Iresha Akalanka | Portfolio</title>
     <style>
         :root { --primary: #1a2a6c; --secondary: #b21f1f; --accent: #fdbb2d; --bg: #f4f7f6; }
         body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--bg); }
-        header { background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); color: white; padding: 4rem 1rem; text-align: center; }
+        
+        /* Header & Profile Section */
+        header { background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); color: white; padding: 3rem 1rem; text-align: center; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        
         .container { max-width: 1100px; margin: auto; padding: 20px; }
         .project-section { background: white; border-radius: 12px; padding: 30px; margin-bottom: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-left: 8px solid var(--primary); }
-        h2 { color: var(--primary); text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 50px; }
-        h3 { color: var(--secondary); margin-top: 0; font-size: 1.5rem; }
+        h2 { color: var(--primary); text-transform: uppercase; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 50px; }
+        h3 { color: var(--secondary); margin-top: 0; }
+        
+        /* Image Styling */
+        .img-container { width: 100%; margin-bottom: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; background: #eee; }
+        .img-container img { width: 100%; display: block; min-height: 100px; }
+        
         .stats-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
         .stats-table th, .stats-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        .stats-table th { background-color: #f8f9fa; color: var(--primary); }
-        .img-container { width: 100%; margin-bottom: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; }
-        .img-container img { width: 100%; display: block; }
+        .stats-table th { background-color: #f8f9fa; }
         .tag { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-right: 5px; font-weight: bold; }
         .highlight { color: #b21f1f; font-weight: bold; }
         .intro-box { background: #eef2f3; padding: 25px; border-radius: 8px; text-align: center; margin-bottom: 30px; }
@@ -25,84 +32,76 @@
 <body>
 
 <header>
+    <img src="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/464476942_8512067872241549_7374987473130828170_n.jpg" alt="Iresha Akalanka" class="profile-img">
     <h1>Iresha Akalanka Perera</h1>
     <p>Full-Stack Solutions Developer | Automation Expert | Creative Designer</p>
-    <p style="font-size: 0.9rem; opacity: 0.9;">Empowering Public Sector through Digital Transformation</p>
 </header>
 
 <div class="container">
 
     <div class="intro-box">
-        <p>A self-taught developer specialized in <strong>Google Apps Script</strong> and <strong>Cloud-based Automation</strong>. Currently attached to the Divisional Secretariat Sri Jayewardenepura Kotte, focusing on streamlining government processes and enhancing public service efficiency through innovative tech solutions.</p>
+        <p>Expert in <strong>Google Apps Script</strong> and <strong>Public Sector Digitalization</strong>. Dedicated to streamlining government processes through innovative automation.</p>
     </div>
 
     <h2>Core Software Projects</h2>
 
     <div class="project-section">
         <h3>01. SAFE-KID Management System</h3>
-        <p><em>(Securing All Families and Every Kid)</em></p>
-        <div class="img-container">
-    <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20220536.png" alt="SAFE-KID Dashboard">
-</div>
-        <p>A centralized data management system designed to identify high-risk families and ensure child protection. It features 06 main components including Data Analytics Dashboards and automated monitoring tools.</p>
-        <table class="stats-table">
-            <tr><th>Metric</th><th>Manual Process (Paper-based)</th><th>Digital Process (SAFE-KID)</th></tr>
-            <tr><td>Risk Identification</td><td>Difficult to summarize</td><td class="highlight">Instant via Dashboard</td></tr>
-            <tr><td>Decision Speed</td><td>Several Days</td><td class="highlight">Real-time (Within hours)</td></tr>
-        </table>
-        <span class="tag">Google Apps Script</span> <span class="tag">Social Services</span> <span class="tag">Data Analytics</span>
+        <div class="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-03-11%20220536.png">
+            <img src="SAFE_KID_IMAGE_LINK" alt="SAFE-KID Dashboard">
+        </div>
+        <p>Centralized data system for child protection and high-risk family monitoring.</p>
+        <span class="tag">Google Apps Script</span> <span class="tag">Data Analytics</span>
     </div>
 
     <div class="project-section">
         <h3>02. Land Compensation Interest Calculator</h3>
-        <div class="img-container">
-    <img src="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-03-11%20221710.png" alt="SAFE-KID Dashboard">
-</div>
-        <p>Automated solution for calculating complex interest and compensation for land acquisition processes.</p>
-        <p><strong>Impact:</strong> Reduced processing time per report from 30 minutes to just 05 minutes, achieving an <span class="highlight">83% increase in efficiency.</span></p>
-        <span class="tag">FinTech</span> <span class="tag">Automation</span> <span class="tag">Legal-Tech</span>
+        <div class="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-03-11%20221710.png">
+            <img src="LAND_CALC_IMAGE_LINK" alt="Land Compensation Calculator">
+        </div>
+        <p>Automated report generation reducing process time by <span class="highlight">83%</span>.</p>
+        <span class="tag">FinTech</span> <span class="tag">Automation</span>
     </div>
 
     <div class="project-section">
         <h3>03. Grama Niladhari Division Search Engine</h3>
-        <p>A public-facing tool allowing citizens to find their respective GN officers and contact details based on their street name within 10 seconds.</p>
-        <p><strong>Key Value:</strong> Drastically reduced physical inquiries and office congestion.</p>
-        <span class="tag">Public Service</span> <span class="tag">UX Design</span>
+        <div class="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-02-22%20201400.png">
+            <img src="GN_SEARCH_IMAGE_LINK" alt="GN Search Engine">
+        </div>
+        <p>Citizen-centric tool to find GN officers and contact data in seconds.</p>
+        <span class="tag">Public Service</span> <span class="tag">Search Tech</span>
     </div>
 
     <div class="project-section">
         <h3>04. Record Room Management System (RRMS)</h3>
-        <p>An inventory and search system for physical archives, allowing officers to locate specific files among thousands in under 30 seconds.</p>
-        <p><strong>Efficiency:</strong> Search time reduced from 30+ minutes to near-instant results.</p>
-        <span class="tag">Inventory Management</span> <span class="tag">JavaScript</span>
+        <div class="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-02-25%20001458.png">
+            <img src="RRMS_IMAGE_LINK" alt="Record Room Management">
+        </div>
+        <p>Digital archive search reducing file retrieval from 30 minutes to seconds.</p>
+        <span class="tag">Inventory</span> <span class="tag">JavaScript</span>
     </div>
 
-    <h2>Administrative & Creative Excellence</h2>
+    <div class="project-section">
+        <h3>05. Field Officer Progress Tracking</h3>
+        <div class="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-03-11%20222801.png">
+            <img src="PROGRESS_TRACK_IMAGE_LINK" alt="Progress Tracking">
+        </div>
+        <p>Paperless daily progress reporting for Field Officers.</p>
+        <span class="tag">E-Governance</span>
+    </div>
 
+    <h2>Other Technical Solutions</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-        <div class="project-section" style="margin-bottom: 0;">
-            <h3>Field Officer Progress Tracking</h3>
-            <p>Paperless monitoring system for Grama Niladhari and Development Officers to report daily field progress via digital forms.</p>
-            <span class="tag">Management</span>
+        <div class="project-section">
+            <h3>Status Review of Office Electronic Appliance</h3>
+            <div class="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-03-11%20223206.png"><img src="MAIL_SYSTEM_IMAGE_LINK" alt="Mail System"></div>
+            <p>Digital tracking of official correspondence.</p>
         </div>
-        <div class="project-section" style="margin-bottom: 0;">
-            <h3>Mail Management System</h3>
-            <p>Digital tracking of incoming/outgoing mail to monitor task delegation and response times across departments.</p>
-            <span class="tag">E-Governance</span>
+        <div class="project-section">
+            <h3>Disaster Management</h3>
+            <div class="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-03-11%20223428.png"><img src="DISASTER_IMAGE_LINK" alt="Disaster Tech"></div>
+            <p>Crisis compensation and duplicate detection system.</p>
         </div>
-    </div>
-
-    <div class="project-section" style="margin-top: 40px; border-left-color: var(--accent);">
-        <h3>Special Project: Disaster Compensation Management</h3>
-        <p>Deployed during the "Ditwa" cyclone period to gather child safety data and identify duplicate compensation claims, preventing financial leakage of government funds.</p>
-        <span class="tag">Disaster Management</span> <span class="tag">Crisis Tech</span>
-    </div>
-
-    <h2>Skills & Tools</h2>
-    <div class="intro-box">
-        <p><strong>Development:</strong> Google Apps Script, HTML/CSS, JavaScript, Google Sheets API</p>
-        <p><strong>Creative:</strong> Professional Video Editing, Publication Design (Books), AI Prompt Engineering</p>
-        <p><strong>Administrative:</strong> Land Acquisition Specialist, Public Administration, Data Analysis</p>
     </div>
 
 </div>
