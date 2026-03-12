@@ -13,19 +13,27 @@
         .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
         
         .container { max-width: 1100px; margin: auto; padding: 20px; }
+        
+        /* Academic & Professional Card Styling */
+        .section-title { color: var(--primary); text-transform: uppercase; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 50px; }
+        .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid var(--primary); }
+        
         .project-section { background: white; border-radius: 12px; padding: 30px; margin-bottom: 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-left: 8px solid var(--primary); }
         h2 { color: var(--primary); text-transform: uppercase; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-top: 50px; }
         h3 { color: var(--secondary); margin-top: 0; font-size: 1.6rem; }
         
         /* Image Styling */
-        .img-container { width: 100%; margin-bottom: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .img-container img { width: 100%; display: block; height: auto; transition: transform 0.3s; }
+        .img-container { width: 100%; margin-bottom: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: #eee; }
+        .img-container img { width: 100%; display: block; height: auto; transition: transform 0.3s; min-height: 100px; }
         .img-container img:hover { transform: scale(1.02); }
         
         .tag { background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; margin-right: 5px; font-weight: bold; display: inline-block; margin-bottom: 5px; }
         .highlight { color: #b21f1f; font-weight: bold; }
         .intro-box { background: white; padding: 30px; border-radius: 8px; text-align: center; margin-bottom: 30px; border: 1px solid #ddd; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
         footer { text-align: center; padding: 40px; background: #2c3e50; color: white; margin-top: 50px; }
+        
+        /* Grid for supplementary projects */
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
     </style>
 </head>
 <body>
@@ -33,11 +41,15 @@
 <header>
     <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/464476942_8512067872241549_7374987473130828170_n.jpg" alt="Iresha Akalanka" class="profile-img">
     <h1>Iresha Akalanka Perera</h1>
-    <p>Solutions Developer | AI Enthusiast | Workflow Automation Developer | Digital Content Designer | Grapic Designer </p>
+    <p>Solutions Developer | AI Enthusiast | Workflow Automation Developer | Digital Content Designer</p>
 </header>
 
-    <div class="section">
-    <h2>Academic & Professional Qualifications</h2>
+<div class="container">
+    <div class="intro-box">
+        <p>Experienced in <strong>Google Apps Script</strong> and <strong>Public Sector Automation</strong>. Specializing in digitizing government workflows to enhance efficiency, transparency, and data-driven decision making with zero infrastructure costs.</p>
+    </div>
+
+    <h2 class="section-title">Academic & Professional Qualifications</h2>
     
     <div class="card" style="border-left-color: #e67e22;">
         <h3>Academic Foundation</h3>
@@ -53,16 +65,8 @@
             <li><b>ICT NVQ Level 3</b> - VTA</li>
         </ul>
     </div>
-</div>
 
-    
-<div class="container">
-
-    <div class="intro-box">
-        <p>Experienced in <strong>Google Apps Script</strong> and <strong>Public Sector Automation</strong>. Specializing in digitizing government workflows to enhance efficiency, transparency, and data-driven decision making with zero infrastructure costs.</p>
-    </div>
-
-    <h2>Core Software Projects</h2>
+    <h2 class="section-title">Core Software Projects</h2>
 
     <div class="project-section">
         <h3>01. Payroll Disbursement & Management System</h3>
@@ -109,17 +113,17 @@
         <span class="tag">Digital Archives</span> <span class="tag">Inventory System</span>
     </div>
     
-<div class="project-section">
-    <h3>Field Officer Progress Monitoring System</h3>
-     <div class="img-container">
-            <img src="https://github.com/akalanka929-eng/iresha-akalanka/blob/main/Screenshot%202026-03-11%20222801.png" alt="Record Room Management">
+    <div class="project-section">
+        <h3>06. Field Officer Progress Monitoring System</h3>
+        <div class="img-container">
+            <img src="https://raw.githubusercontent.com/akalanka929-eng/iresha-akalanka/main/Screenshot%202026-03-11%20222801.png" alt="Field Officer Monitoring">
         </div>
-    <p>A digital solution designed to track the monthly progress and field visit reports of field officers in real-time, streamlining the supervisory process and eliminating manual paperwork.</p>
-    <span class="tag">Progress Tracking</span> <span class="tag">Efficiency</span>
-</div>
+        <p>A digital solution designed to track the monthly progress and field visit reports of field officers in real-time, streamlining the supervisory process and eliminating manual paperwork.</p>
+        <span class="tag">Progress Tracking</span> <span class="tag">Efficiency</span>
+    </div>
 
-    <h2>Supplementary Digital Solutions</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+    <h2 class="section-title">Supplementary Digital Solutions</h2>
+    <div class="grid-container">
         <div class="project-section">
             <h3>Electronic Appliance Review</h3>
             <div class="img-container">
@@ -137,7 +141,6 @@
             <span class="tag">Crisis Management</span>
         </div>
     </div>
-
 </div>
 
 <footer>
